@@ -70,7 +70,7 @@ begin
     insert into public.rv_admin_attempts default values; return false;
   end if;
   if encode(sha256(convert_to(r.salt || p_pass, 'UTF8')), 'hex') = r.pass_hash then
-    delete from public.rv_admin_attempts; return true;
+    delete from public.rv_admin_attempts where true; return true;
   end if;
   insert into public.rv_admin_attempts default values;
   delete from public.rv_admin_attempts where at < now() - interval '1 day';
