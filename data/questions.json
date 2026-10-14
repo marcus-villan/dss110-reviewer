@@ -1,0 +1,2151 @@
+[
+ {
+  "id": "sa1-01",
+  "topic": "co1",
+  "kind": "tf",
+  "prompt": "Phase 4 involves building, testing, and evaluating models using training and hold-out test data.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Phase 4 (model building) builds, tests, and evaluates models using training and hold-out test data.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q1",
+  "position": 1
+ },
+ {
+  "id": "sa1-02",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Model planning in Phase 3 involves selecting variables and the most suitable ____.",
+  "options": [
+   "models",
+   "parameters",
+   "databases",
+   "reports"
+  ],
+  "answer": 0,
+  "explanation": "Phase 3 (model planning) selects variables and the most suitable models. 'Parameters' is a common slip; building and tuning happen in Phase 4.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q2",
+  "position": 2
+ },
+ {
+  "id": "sa1-03",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "ETLT stands for ____, and highlights a different data flow than traditional ETL.",
+  "options": [
+   "extract, transform, load, and transform",
+   "extract, transform, and load",
+   "extract, test, load, and train",
+   "evaluate, transform, load, and test"
+  ],
+  "answer": 0,
+  "explanation": "ETLT = Extract, Transform, Load, Transform. It adds a second transform step after the data is loaded.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q3",
+  "position": 3
+ },
+ {
+  "id": "sa1-04",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "The analytic ____ is a separate space from production data used for exploration and experiments.",
+  "options": [
+   "sandbox",
+   "warehouse",
+   "cluster",
+   "pipeline"
+  ],
+  "answer": 0,
+  "explanation": "The analytic sandbox keeps exploration and experiments away from production data.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q4",
+  "position": 4
+ },
+ {
+  "id": "sa1-05",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "____ is a data preprocessing technique wherein each parameter value is obtained by dividing by magnitude.",
+  "options": [
+   "Normalizer",
+   "MinMaxScaler",
+   "StandardScaler",
+   "RobustScaler"
+  ],
+  "answer": 0,
+  "explanation": "The Normalizer rescales each sample by dividing it by its magnitude (norm). MinMaxScaler scales to a range, usually 0-1, with (x - min) / (max - min).",
+  "is_code": false,
+  "verify": true,
+  "source": "SA1 Q5",
+  "position": 5
+ },
+ {
+  "id": "sa1-06",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Before modeling, we handle missing values by imputing numeric features with the ____ PreProcessing Technique.",
+  "options": [
+   "SimpleImputer",
+   "MinMaxScaler",
+   "OneHotEncoder",
+   "Normalizer"
+  ],
+  "answer": 0,
+  "explanation": "Missing numeric values are filled in by imputation: SimpleImputer with strategy mean, median, or most_frequent.",
+  "is_code": false,
+  "verify": true,
+  "source": "SA1 Q6",
+  "position": 6
+ },
+ {
+  "id": "sa1-07",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Outliers should be addressed because they can distort the ____ and other statistics.",
+  "options": [
+   "mean",
+   "output",
+   "labels",
+   "schema"
+  ],
+  "answer": 0,
+  "explanation": "Outliers pull the mean (and other statistics) away from typical values, which can mislead a model.",
+  "is_code": false,
+  "verify": true,
+  "source": "SA1 Q7",
+  "position": 7
+ },
+ {
+  "id": "sa1-08",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "____ is a data preprocessing method used to derive non-linear features by converting data into a polynomial of higher degree.",
+  "options": [
+   "PolynomialFeatures",
+   "LabelEncoder",
+   "StandardScaler",
+   "SimpleImputer"
+  ],
+  "answer": 0,
+  "explanation": "PolynomialFeatures creates non-linear features (x squared, x cubed, interactions) by raising the data to higher degrees.",
+  "is_code": false,
+  "verify": true,
+  "source": "SA1 Q8",
+  "position": 8
+ },
+ {
+  "id": "sa1-09",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "We remove ____ to avoid counting the same observation twice.",
+  "options": [
+   "duplicates",
+   "repetitions",
+   "outliers",
+   "missing values"
+  ],
+  "answer": 0,
+  "explanation": "Duplicate rows are removed (df.drop_duplicates()) so no observation is counted twice. 'Repetitions' is not the term used.",
+  "is_code": false,
+  "verify": true,
+  "source": "SA1 Q9",
+  "position": 9
+ },
+ {
+  "id": "sa1-10",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Categorical features can be converted to numbers using ____.",
+  "options": [
+   "OneHotEncoder",
+   "Normalizer",
+   "RobustScaler",
+   "SimpleImputer"
+  ],
+  "answer": 0,
+  "explanation": "OneHotEncoder turns each category into its own 0/1 column. (LabelEncoder gives one unique integer per category.)",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q10",
+  "position": 10
+ },
+ {
+  "id": "sa1-11",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Data collection methods include ____, interviews, and questionnaires.",
+  "options": [
+   "observation",
+   "imputation",
+   "scaling",
+   "deployment"
+  ],
+  "answer": 0,
+  "explanation": "Observation, interviews, and questionnaires are data collection methods.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q11",
+  "position": 11
+ },
+ {
+  "id": "sa1-12",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Primary data is data collected directly from the ____.",
+  "options": [
+   "source",
+   "archive",
+   "internet",
+   "model"
+  ],
+  "answer": 0,
+  "explanation": "Primary data is collected firsthand, directly from the source.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q12",
+  "position": 12
+ },
+ {
+  "id": "sa1-13",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Primary data is data that is:",
+  "options": [
+   "Copied from a published study",
+   "Obtained from secondary databases",
+   "Generated by random simulations",
+   "Collected directly from the source"
+  ],
+  "answer": 3,
+  "explanation": "Primary data comes straight from the source. Published studies and secondary databases give secondary data.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q13",
+  "position": 13
+ },
+ {
+  "id": "sa1-14",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "A ____ is a graphical presentation of quantitative data using bars to show frequency.",
+  "options": [
+   "histogram",
+   "line graph",
+   "scatter plot",
+   "heatmap"
+  ],
+  "answer": 0,
+  "explanation": "A histogram uses bars to show frequency. A line graph shows trends, usually over time.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q14",
+  "position": 14
+ },
+ {
+  "id": "sa1-15",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "A box plot can be drawn directly from a pandas DataFrame using df.plot(kind='____').",
+  "options": [
+   "box",
+   "bar",
+   "hist",
+   "line"
+  ],
+  "answer": 0,
+  "explanation": "df.plot(kind='box') draws a box plot.",
+  "is_code": true,
+  "verify": false,
+  "source": "SA1 Q15",
+  "position": 15
+ },
+ {
+  "id": "sa1-16",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "To visualize a matrix of values or correlations as an image, seaborn provides the ____ function.",
+  "options": [
+   "heatmap",
+   "skimage",
+   "boxplot",
+   "pairplot"
+  ],
+  "answer": 0,
+  "explanation": "sns.heatmap(df.corr()) draws a correlation matrix as a colored image.",
+  "is_code": true,
+  "verify": false,
+  "source": "SA1 Q16",
+  "position": 16
+ },
+ {
+  "id": "sa1-17",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "To plot a time series with pandas, you can use the built-in plot method with the kind parameter set to ____.",
+  "options": [
+   "line",
+   "box",
+   "pie",
+   "scatter"
+  ],
+  "answer": 0,
+  "explanation": "kind='line' plots values over time.",
+  "is_code": true,
+  "verify": false,
+  "source": "SA1 Q17",
+  "position": 17
+ },
+ {
+  "id": "sa1-18",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "For a bar chart of a categorical variable, use value_counts().plot(kind='____').",
+  "options": [
+   "bar",
+   "nominal",
+   "box",
+   "hist"
+  ],
+  "answer": 0,
+  "explanation": "Count the categories with value_counts(), then plot with kind='bar'. 'nominal' is not a valid kind.",
+  "is_code": true,
+  "verify": false,
+  "source": "SA1 Q18",
+  "position": 18
+ },
+ {
+  "id": "sa1-19",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "To create a scatter plot that explores the relationship between two numeric variables, call df.plot(kind='____', x='A', y='B').",
+  "options": [
+   "scatter",
+   "box",
+   "line",
+   "hist"
+  ],
+  "answer": 0,
+  "explanation": "df.plot(kind='scatter', x='A', y='B') plots one numeric variable against another.",
+  "is_code": true,
+  "verify": false,
+  "source": "SA1 Q19",
+  "position": 19
+ },
+ {
+  "id": "sa1-20a",
+  "topic": "co1",
+  "kind": "card",
+  "prompt": "Given a sample dataset (with missing values, categories, and numerical data):\n```\nraw_data = {\n  'Age': [25, 30, np.nan, 35, 40, 22, np.nan, 48],\n  'Salary': [50000, 60000, 52000, np.nan, 90000, 45000, 70000, 110000],\n  'Department': ['HR', 'IT', 'IT', 'HR', 'Finance', 'Finance', 'IT', 'HR'],\n  'Purchased': ['No', 'Yes', 'No', 'No', 'Yes', 'No', 'Yes', 'Yes']\n}\n```\n1. Write a Python program to create a pie chart representing the distribution of employees across departments.\nExpected output: percentage of HR, IT, and Finance employees.",
+  "options": [],
+  "answer": null,
+  "explanation": "```\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.DataFrame(raw_data)\ndf['Department'].value_counts().plot(kind='pie', autopct='%1.1f%%')\nplt.ylabel('')\nplt.show()\n```\nHR 37.5%, IT 37.5%, Finance 25%.",
+  "is_code": true,
+  "verify": false,
+  "source": "SA1 Q20",
+  "position": 20
+ },
+ {
+  "id": "sa1-20b",
+  "topic": "co1",
+  "kind": "card",
+  "prompt": "Same dataset.\n2. Write a Python program to create a histogram of employee ages after handling missing values.\nGuide: replace missing ages with the mean age. Use 5 bins.",
+  "options": [],
+  "answer": null,
+  "explanation": "```\ndf = pd.DataFrame(raw_data)\ndf['Age'] = df['Age'].fillna(df['Age'].mean())\ndf['Age'].plot(kind='hist', bins=5)\nplt.xlabel('Age')\nplt.show()\n```\nThe mean of the six known ages is 200 / 6 = 33.33.",
+  "is_code": true,
+  "verify": false,
+  "source": "SA1 Q20",
+  "position": 21
+ },
+ {
+  "id": "sa1-25",
+  "topic": "co1",
+  "kind": "card",
+  "prompt": "Same dataset. Write the correct code to implement the following:\n1. Create a dataframe df.\n2. Use imputation to replace missing values for Age.\n3. Use RobustScaler to normalize the Salary.\n4. Use LabelEncoder to convert Department into numerical values by assigning a unique integer to each category.",
+  "options": [],
+  "answer": null,
+  "explanation": "```\nimport pandas as pd\nfrom sklearn.impute import SimpleImputer\nfrom sklearn.preprocessing import RobustScaler, LabelEncoder\n\n# 1\ndf = pd.DataFrame(raw_data)\n\n# 2\ndf['Age'] = SimpleImputer(strategy='mean').fit_transform(df[['Age']])\n\n# 3  (x - median) / IQR; NaN is ignored when fitting and stays NaN\ndf['Salary'] = RobustScaler().fit_transform(df[['Salary']])\n\n# 4  one unique integer per category: Finance=0, HR=1, IT=2\ndf['Department'] = LabelEncoder().fit_transform(df['Department'])\n```\nLabelEncoder gives one integer per category. The binary yes/no style columns belong to OneHotEncoder.",
+  "is_code": true,
+  "verify": false,
+  "source": "SA1 Q25",
+  "position": 22
+ },
+ {
+  "id": "sa1-26a",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Match the data science lifecycle stage with its primary activity.\nProblem formulation",
+  "options": [
+   "Define goals, constraints, and success metrics",
+   "Gather relevant data from diverse sources",
+   "Clean, transform, and organize data for analysis",
+   "Assess model performance against metrics"
+  ],
+  "answer": 0,
+  "explanation": "Problem formulation: define goals, constraints, and success metrics.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q26",
+  "position": 23
+ },
+ {
+  "id": "sa1-26b",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Match the data science lifecycle stage with its primary activity.\nData collection",
+  "options": [
+   "Define goals, constraints, and success metrics",
+   "Gather relevant data from diverse sources",
+   "Clean, transform, and organize data for analysis",
+   "Assess model performance against metrics"
+  ],
+  "answer": 1,
+  "explanation": "Data collection: gather relevant data from diverse sources.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q26",
+  "position": 24
+ },
+ {
+  "id": "sa1-26c",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Match the data science lifecycle stage with its primary activity.\nData preparation",
+  "options": [
+   "Define goals, constraints, and success metrics",
+   "Gather relevant data from diverse sources",
+   "Clean, transform, and organize data for analysis",
+   "Assess model performance against metrics"
+  ],
+  "answer": 2,
+  "explanation": "Data preparation: clean, transform, and organize data for analysis.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q26",
+  "position": 25
+ },
+ {
+  "id": "sa1-26d",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Match the data science lifecycle stage with its primary activity.\nModel evaluation",
+  "options": [
+   "Define goals, constraints, and success metrics",
+   "Gather relevant data from diverse sources",
+   "Clean, transform, and organize data for analysis",
+   "Assess model performance against metrics"
+  ],
+  "answer": 3,
+  "explanation": "Model evaluation: assess model performance against metrics.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q26",
+  "position": 26
+ },
+ {
+  "id": "sa1-21",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "The data science lifecycle starts with understanding the problem, followed by data collection, preparation, analysis, modeling, evaluation, deployment, and then ____ of findings.",
+  "options": [
+   "communication",
+   "collection",
+   "preparation",
+   "planning"
+  ],
+  "answer": 0,
+  "explanation": "Lifecycle order: problem, collection, preparation, analysis, modeling, evaluation, deployment, then communication of findings.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q21",
+  "position": 27
+ },
+ {
+  "id": "sa1-22",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "Exploratory Data Analysis (EDA) helps identify ____ and relationships before modeling.",
+  "options": [
+   "patterns",
+   "passwords",
+   "servers",
+   "deployments"
+  ],
+  "answer": 0,
+  "explanation": "EDA reveals patterns and relationships in the data before you build a model.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q22",
+  "position": 28
+ },
+ {
+  "id": "sa1-23",
+  "topic": "co1",
+  "kind": "tf",
+  "prompt": "The Data Science lifecycle ends with deployment and communication of results.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Deployment and communication of results are the final stages.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q23",
+  "position": 29
+ },
+ {
+  "id": "sa1-24",
+  "topic": "co1",
+  "kind": "mc",
+  "prompt": "A typical Data Science lifecycle step is ____ models into production systems.",
+  "options": [
+   "deploying",
+   "visualizing",
+   "encoding",
+   "scaling"
+  ],
+  "answer": 0,
+  "explanation": "Models are deployed into production systems. Sharing results is the separate communication stage.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA1 Q24",
+  "position": 30
+ },
+ {
+  "id": "sa2-01",
+  "topic": "co2",
+  "kind": "tf",
+  "prompt": "Correlation indicates the strength of the relationship between variables.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Correlation measures how strongly two variables are related.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q1",
+  "position": 31
+ },
+ {
+  "id": "sa2-02",
+  "topic": "co2",
+  "kind": "tf",
+  "prompt": "Duplicate records should be checked during data cleaning.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. Duplicates would count the same observation twice.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q2",
+  "position": 32
+ },
+ {
+  "id": "sa2-03",
+  "topic": "co2",
+  "kind": "tf",
+  "prompt": "EDA should be performed before building predictive models.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explanation": "True. EDA comes before modeling.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q3",
+  "position": 33
+ },
+ {
+  "id": "sa2-04",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "Which method provides information about data types and missing values?",
+  "options": [
+   "df.info()",
+   "df.sum()",
+   "df.shape()",
+   "df.mean()"
+  ],
+  "answer": 0,
+  "explanation": "df.info() lists each column, its data type, and its non-null count.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q4",
+  "position": 34
+ },
+ {
+  "id": "sa2-05",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "Which attribute returns the dimensions of a DataFrame?",
+  "options": [
+   "df.columns",
+   "df.index",
+   "df.shape",
+   "df.values"
+  ],
+  "answer": 2,
+  "explanation": "df.shape returns (rows, columns). It is an attribute, so no parentheses.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q5",
+  "position": 35
+ },
+ {
+  "id": "sa2-06",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "What is the primary purpose of Exploratory Data Analysis (EDA)?",
+  "options": [
+   "Deploy machine learning models",
+   "Explore and understand data before modeling",
+   "Build websites",
+   "Create databases"
+  ],
+  "answer": 1,
+  "explanation": "EDA is about exploring and understanding the data before modeling.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q6",
+  "position": 36
+ },
+ {
+  "id": "sa2-07",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "Which method identifies missing values in a dataset?",
+  "options": [
+   "df.unique()",
+   "df.duplicated()",
+   "df.drop()",
+   "df.isnull()"
+  ],
+  "answer": 3,
+  "explanation": "df.isnull() flags missing values. Chain .sum() to count them per column.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q7",
+  "position": 37
+ },
+ {
+  "id": "sa2-08",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "Which function displays the first five rows of a dataset?",
+  "options": [
+   "df.head()",
+   "df.info()",
+   "df.describe()",
+   "df.tail()"
+  ],
+  "answer": 0,
+  "explanation": "df.head() shows the first five rows; df.tail() shows the last five.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q8",
+  "position": 38
+ },
+ {
+  "id": "sa2-09",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "Which plot is commonly used to detect outliers?",
+  "options": [
+   "Pie Chart",
+   "Heatmap",
+   "Scatter Matrix",
+   "Boxplot"
+  ],
+  "answer": 3,
+  "explanation": "A boxplot marks values far outside the quartiles as outliers.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q9",
+  "position": 39
+ },
+ {
+  "id": "sa2-10",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "What is an outlier?",
+  "options": [
+   "A value significantly different from others",
+   "A duplicate value",
+   "A categorical variable",
+   "A missing value"
+  ],
+  "answer": 0,
+  "explanation": "An outlier is a value significantly different from the others.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q10",
+  "position": 40
+ },
+ {
+  "id": "sa2-11",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "Which library is commonly used for statistical visualization?",
+  "options": [
+   "Django",
+   "Flask",
+   "TensorFlow",
+   "Seaborn"
+  ],
+  "answer": 3,
+  "explanation": "Seaborn is built for statistical visualization. Django and Flask are web frameworks; TensorFlow is for machine learning.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q11",
+  "position": 41
+ },
+ {
+  "id": "sa2-12",
+  "topic": "co2",
+  "kind": "card",
+  "prompt": "Name two Python libraries frequently used in EDA.",
+  "options": [],
+  "answer": null,
+  "explanation": "pandas and seaborn. (matplotlib and numpy are also common.)",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q12",
+  "position": 42
+ },
+ {
+  "id": "sa2-13",
+  "topic": "co2",
+  "kind": "card",
+  "prompt": "What is the purpose of a correlation matrix?",
+  "options": [],
+  "answer": null,
+  "explanation": "To visually show the relationship between the variables in a dataset (how strong it is, and whether they move together), so you can see which are related or independent of each other. It is often drawn as a heatmap.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q13",
+  "position": 43
+ },
+ {
+  "id": "sa2-14",
+  "topic": "co2",
+  "kind": "card",
+  "prompt": "Why is visualization important in EDA?",
+  "options": [],
+  "answer": null,
+  "explanation": "So we can visually see and study the data, spot patterns, outliers and trends, and judge which features are best for the target model. EDA visualization uses boxplots, scatterplots, histograms and heatmaps for univariate, bivariate and multivariate analyses.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q14",
+  "position": 44
+ },
+ {
+  "id": "sa2-15",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "In the f_regression example for California housing, the F-values are array([1.85565716e+04, 2.32841479e+02, 4.87757462e+02, ...]). What does the feature with the F-value of 1.85565716e+04 imply about its relationship with the target variable?",
+  "options": [
+   "It has a very strong linear relationship with the target.",
+   "Its p-value is likely very high.",
+   "It has a weak linear relationship with the target.",
+   "It has a strong non-linear relationship with the target."
+  ],
+  "answer": 0,
+  "explanation": "A very large F-value means a very strong linear relationship with the target and a very low p-value. f_regression only measures linear dependence.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q15",
+  "position": 45
+ },
+ {
+  "id": "sa2-16",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "After running chi2, pval = feature_selection.chi2(df.drop('Play',axis=1), df.Play), the chi2 values for the features 'Outlook', 'Temperature', 'Humidity', 'Wind' are array([2.02814815, 0.02222222, 1.4, 0.4]). Which feature shows the strongest dependency with the 'Play' target, based on these scores?",
+  "options": [
+   "Humidity",
+   "Outlook",
+   "Temperature",
+   "Wind"
+  ],
+  "answer": 1,
+  "explanation": "A higher chi2 score means a stronger dependency with the target. Outlook has the highest score (2.03).",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q16",
+  "position": 46
+ },
+ {
+  "id": "sa2-17",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "Consider the synthetic data: y = X[:, 0] + np.sin(6 * np.pi * X[:, 1]) + 0.1 * np.random.randn(1000). If f_regression is applied, why might X[:, 1] receive a lower F-score compared to X[:, 0], despite being highly related to y?",
+  "options": [
+   "X[:, 0] has a stronger overall correlation with y.",
+   "The noise component 0.1 * np.random.randn(1000) masks the relationship of X[:, 1].",
+   "f_regression is designed for classification tasks, not regression.",
+   "X[:, 1] has a non-linear relationship with y, which f_regression struggles to capture."
+  ],
+  "answer": 3,
+  "explanation": "f_regression measures linear dependence, so the sine relationship of X[:, 1] scores low even though it is strongly related to y.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q17",
+  "position": 47
+ },
+ {
+  "id": "sa2-18",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "Given the np.round(chi2) output for the breast cancer dataset as array([647., 118., 697., 573., 84., ...]), how would you interpret the feature corresponding to the value 697.?",
+  "options": [
+   "It has a strong non-linear relationship with the target variable.",
+   "It is an irrelevant feature and should be removed.",
+   "Its F-value is lower than average, suggesting low importance.",
+   "It has a very strong linear relationship with the target variable."
+  ],
+  "answer": 3,
+  "explanation": "Of the values shown, 697 is the highest score, so that feature has the strongest dependency with the target (the course answer: a very strong linear relationship).",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q18",
+  "position": 48
+ },
+ {
+  "id": "sa2-19",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "Using SelectKBest(k=7, score_func=feature_selection.f_classif) on the adult_data (after dropping 'Salary'), selector.scores_ shows feature scores. If the adult_data.columns are Index(['age', 'workclass', 'fnlwgt', 'education', 'education-num', 'marital-status', 'occupation', 'relationship', 'race', 'sex', 'capital-gain', 'capital-loss', 'hours-per-week', 'native-country']), and the scores (rounded for simplicity) are [1886, 86, 2, 206, 4120, 1346, 186, 2187, 168, 1593, 1709, 754, 1813, 8]. Which feature would likely be excluded if k=7?",
+  "options": [
+   "'fnlwgt' (score 2)",
+   "'relationship' (score 2187)",
+   "'capital-gain' (score 1709)",
+   "'education-num' (score 4120)"
+  ],
+  "answer": 0,
+  "explanation": "SelectKBest keeps the 7 highest scores (4120, 2187, 1886, 1813, 1709, 1593, 1346). 'fnlwgt' (score 2) is far below that and is excluded.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q19",
+  "position": 49
+ },
+ {
+  "id": "sa2-20",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "Given the df after label encoding:\n```\n   A  B  C\n0  1  1  1\n1  0  2  2\n2  1  3  3\n3  1  1  1\n4  1  2  2\n5  1  1  1\n6  1  1  1\n7  1  1  1\n```\nAnd vt.variances_ output: array([0.109375, 0.5, 0.5]) If a VarianceThreshold selector is set with threshold=0.2, which columns will be retained after fit_transform?",
+  "options": [
+   "'B', 'C'",
+   "'A', 'B', 'C'",
+   "'A', 'C'",
+   "Only 'A'"
+  ],
+  "answer": 0,
+  "explanation": "Columns with variance below the threshold are dropped. A (0.109) is below 0.2; B and C (0.5) stay.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q20",
+  "position": 50
+ },
+ {
+  "id": "sa2-21",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "If adult_data has 14 features (excluding 'Salary') and SelectPercentile(percentile=20, score_func=mutual_info_classif) is used, how many features will be selected?",
+  "options": [
+   "7",
+   "3",
+   "14",
+   "2"
+  ],
+  "answer": 1,
+  "explanation": "20% of 14 features is 2.8, which rounds up to 3 features selected (the course answer).",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q21",
+  "position": 51
+ },
+ {
+  "id": "sa2-22",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "What type of feature selection technique is VarianceThreshold?",
+  "options": [
+   "Supervised, univariate.",
+   "Unsupervised, multivariate.",
+   "Supervised, multivariate.",
+   "Unsupervised, univariate."
+  ],
+  "answer": 3,
+  "explanation": "VarianceThreshold never looks at the target (unsupervised) and judges each feature on its own variance (univariate).",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q22",
+  "position": 52
+ },
+ {
+  "id": "sa2-23",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "When is f_regression typically used for feature selection?",
+  "options": [
+   "When both features and the target are categorical.",
+   "When both features and the target are continuous.",
+   "When features are continuous and the target is categorical.",
+   "When features are categorical and the target is continuous."
+  ],
+  "answer": 1,
+  "explanation": "f_regression is for regression problems, so both the features and the target are continuous. (f_classif is continuous features with a categorical target.)",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q23",
+  "position": 53
+ },
+ {
+  "id": "sa2-24",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "What is the primary function of SelectKBest?",
+  "options": [
+   "To remove features with low variance.",
+   "To perform principal component analysis (PCA).",
+   "To select features based on their correlation with other features.",
+   "To select a fixed number (k) of the most important features based on a scoring function."
+  ],
+  "answer": 3,
+  "explanation": "SelectKBest keeps the k features with the highest scores from a scoring function.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q24",
+  "position": 54
+ },
+ {
+  "id": "sa2-25",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "How does SelectPercentile differ from SelectKBest?",
+  "options": [
+   "SelectPercentile is for regression tasks, while SelectKBest is for classification.",
+   "SelectPercentile uses a different set of scoring functions than SelectKBest.",
+   "SelectPercentile selects a fixed number of features, while SelectKBest selects a percentage.",
+   "SelectPercentile selects a percentage of the top-scoring features, while SelectKBest selects a fixed number."
+  ],
+  "answer": 3,
+  "explanation": "SelectPercentile keeps a percentage of the top-scoring features. SelectKBest keeps a fixed number (k).",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q25",
+  "position": 55
+ },
+ {
+  "id": "sa2-26",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "For which type of data combination is the Chi-squared test (chi2) typically used for feature selection?",
+  "options": [
+   "Categorical features and categorical target.",
+   "Continuous features and continuous target.",
+   "Continuous features and categorical target.",
+   "Categorical features and continuous target."
+  ],
+  "answer": 0,
+  "explanation": "chi2 tests dependency between categorical features and a categorical target.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q26",
+  "position": 56
+ },
+ {
+  "id": "sa2-27",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "When using SelectKBest with score_func=feature_selection.f_classif on the adult_data (with 'Salary' as target), which of the following features, if present in the data, would be ranked highly for a classification task?",
+  "options": [
+   "A feature with a high p-value, indicating a weak relationship with the target.",
+   "A feature that is highly correlated with other features but not with the target.",
+   "A feature with very low variance.",
+   "A feature with a high F-value, indicating strong linear dependency with the target."
+  ],
+  "answer": 3,
+  "explanation": "A high F-value (and low p-value) means a strong linear dependency with the target, so the feature ranks highly.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q27",
+  "position": 57
+ },
+ {
+  "id": "sa2-28",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "What is the primary goal of feature selection in machine learning?",
+  "options": [
+   "To preprocess categorical features into numerical ones.",
+   "To increase the dimensionality of the dataset.",
+   "To reduce model complexity and improve accuracy by removing irrelevant or redundant features.",
+   "To automatically generate new features from existing ones."
+  ],
+  "answer": 2,
+  "explanation": "Feature selection keeps the useful features and drops irrelevant or redundant ones.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q28",
+  "position": 58
+ },
+ {
+  "id": "sa2-29",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "When using mutual_info_regression, which type of target variable is expected?",
+  "options": [
+   "Binary",
+   "Continuous",
+   "Categorical",
+   "Discrete"
+  ],
+  "answer": 1,
+  "explanation": "mutual_info_regression expects a continuous target.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q29",
+  "position": 59
+ },
+ {
+  "id": "sa2-30",
+  "topic": "co2",
+  "kind": "mc",
+  "prompt": "How does mutual_info_classif differ from mutual_info_regression in terms of target variable type?",
+  "options": [
+   "Both handle only discrete targets.",
+   "mutual_info_classif handles discrete targets, while mutual_info_regression handles continuous targets.",
+   "Both handle only continuous targets.",
+   "mutual_info_classif handles continuous targets, while mutual_info_regression handles discrete targets."
+  ],
+  "answer": 1,
+  "explanation": "mutual_info_classif: discrete target. mutual_info_regression: continuous target.",
+  "is_code": false,
+  "verify": false,
+  "source": "SA2 Q30",
+  "position": 60
+ },
+ {
+  "id": "su-01",
+  "topic": "co3-sup",
+  "kind": "mc",
+  "prompt": "Supervised learning requires:",
+  "options": [
+   "Unlabeled data",
+   "Labeled data",
+   "Random data only",
+   "Clustered data"
+  ],
+  "answer": 1,
+  "explanation": "Supervised learning trains on labeled data: inputs paired with the correct outputs.",
+  "is_code": false,
+  "verify": false,
+  "source": "Sup and Unsup Q1",
+  "position": 61
+ },
+ {
+  "id": "su-02",
+  "topic": "co3-sup",
+  "kind": "mc",
+  "prompt": "The main goal of a classification model is to:",
+  "options": [
+   "Predict continuous values",
+   "Group similar data points",
+   "Assign data into categories",
+   "Remove noisy data"
+  ],
+  "answer": 2,
+  "explanation": "Classification assigns data into categories. Predicting continuous values is regression; grouping is clustering.",
+  "is_code": false,
+  "verify": false,
+  "source": "Sup and Unsup Q2",
+  "position": 62
+ },
+ {
+  "id": "su-03",
+  "topic": "co3-sup",
+  "kind": "mc",
+  "prompt": "Which machine learning task predicts house prices?",
+  "options": [
+   "Clustering",
+   "Association Rule Mining",
+   "Regression",
+   "Dimensionality Reduction"
+  ],
+  "answer": 2,
+  "explanation": "Predicting a continuous number such as a price is regression.",
+  "is_code": false,
+  "verify": false,
+  "source": "Sup and Unsup Q3",
+  "position": 63
+ },
+ {
+  "id": "su-04",
+  "topic": "co3-sup",
+  "kind": "mc",
+  "prompt": "Which metric is commonly used in classification problems?",
+  "options": [
+   "Mean Squared Error",
+   "Accuracy",
+   "Sum of Squares",
+   "Variance"
+  ],
+  "answer": 1,
+  "explanation": "Accuracy is a standard classification metric. Mean Squared Error is a regression metric.",
+  "is_code": false,
+  "verify": false,
+  "source": "Sup and Unsup Q4",
+  "position": 64
+ },
+ {
+  "id": "su-05",
+  "topic": "co3-sup",
+  "kind": "mc",
+  "prompt": "What is a feature in machine learning?",
+  "options": [
+   "Output variable",
+   "Data label",
+   "Input variable used for prediction",
+   "Prediction result"
+  ],
+  "answer": 2,
+  "explanation": "A feature is an input variable. The label (target) is the output the model learns to predict.",
+  "is_code": false,
+  "verify": false,
+  "source": "Sup and Unsup Q5",
+  "position": 65
+ },
+ {
+  "id": "su-06",
+  "topic": "co3-sup",
+  "kind": "mc",
+  "prompt": "Unsupervised learning works with:",
+  "options": [
+   "Labeled data",
+   "Unlabeled data",
+   "Only numeric targets",
+   "Predicted probabilities"
+  ],
+  "answer": 1,
+  "explanation": "Unsupervised learning finds structure (clusters, associations) in unlabeled data.",
+  "is_code": false,
+  "verify": true,
+  "source": "Similar to Sup and Unsup Q6 (that question was not visible in the PDF)",
+  "position": 66
+ },
+ {
+  "id": "app-01",
+  "topic": "co3-app",
+  "kind": "mc",
+  "prompt": "A data point has coordinates (4,5). Two cluster centroids are:\n- Cluster A: (2,3)\n- Cluster B: (7,9)\nUsing Euclidean distance, to which cluster should the point be assigned?",
+  "options": [
+   "Cluster A",
+   "Cluster B",
+   "Both clusters",
+   "Cannot be determined"
+  ],
+  "answer": 0,
+  "explanation": "Distance to A = sqrt(2^2 + 2^2) = sqrt(8), about 2.83. Distance to B = sqrt(3^2 + 4^2) = 5. A is closer.",
+  "is_code": false,
+  "verify": false,
+  "source": "Application Q1",
+  "position": 67
+ },
+ {
+  "id": "app-02",
+  "topic": "co3-app",
+  "kind": "mc",
+  "prompt": "A decision tree classifies loan applicants using the following rule:\n- If Income > ₱40,000 → Approve\n- Otherwise → Reject\nAn applicant has an income of ₱55,000. What is the predicted decision?",
+  "options": [
+   "Reject",
+   "Approve",
+   "Review Manually",
+   "Insufficient Data"
+  ],
+  "answer": 1,
+  "explanation": "55,000 is greater than 40,000, so the first rule applies: Approve.",
+  "is_code": false,
+  "verify": false,
+  "source": "Application Q2",
+  "position": 68
+ },
+ {
+  "id": "app-03",
+  "topic": "co3-app",
+  "kind": "mc",
+  "prompt": "The linear regression equation for predicting sales is:\nSales = 100 + 15(Advertising)\nIf advertising expenditure increases from 10 units to 12 units, by how much will the predicted sales increase?",
+  "options": [
+   "15",
+   "25",
+   "30",
+   "45"
+  ],
+  "answer": 2,
+  "explanation": "Increase = slope x change in x = 15 x (12 - 10) = 30. The intercept (100) cancels out.",
+  "is_code": false,
+  "verify": false,
+  "source": "Application Q3",
+  "position": 69
+ },
+ {
+  "id": "app-04",
+  "topic": "co3-app",
+  "kind": "mc",
+  "prompt": "A logistic regression model predicts a probability of 0.76 that a customer will purchase a product. Using a classification threshold of 0.50, the customer will be classified as:",
+  "options": [
+   "No Purchase",
+   "Purchase",
+   "Uncertain",
+   "Outlier"
+  ],
+  "answer": 1,
+  "explanation": "0.76 is above the 0.50 threshold, so the customer is classified as Purchase.",
+  "is_code": false,
+  "verify": false,
+  "source": "Application Q4",
+  "position": 70
+ },
+ {
+  "id": "app-05",
+  "topic": "co3-app",
+  "kind": "mc",
+  "prompt": "Using the Elbow Method, the graph shows a sharp decrease in WCSS until K = 4 and then levels off. What is the best value of K?",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "10"
+  ],
+  "answer": 2,
+  "explanation": "The elbow is where the drop in WCSS levels off: K = 4.",
+  "is_code": false,
+  "verify": false,
+  "source": "Application Q5",
+  "position": 71
+ },
+ {
+  "id": "dt-01",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "Decision Trees are used for:",
+  "options": [
+   "Classification and Regression",
+   "Clustering only",
+   "Visualization only",
+   "Feature Scaling"
+  ],
+  "answer": 0,
+  "explanation": "Decision trees handle both classification and regression.",
+  "is_code": false,
+  "verify": false,
+  "source": "Decision Tree Analysis Q1",
+  "position": 72
+ },
+ {
+  "id": "dt-02",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "The top node of a Decision Tree is called:",
+  "options": [
+   "Leaf Node",
+   "Root Node",
+   "Child Node",
+   "Split Node"
+  ],
+  "answer": 1,
+  "explanation": "The top node is the root node.",
+  "is_code": false,
+  "verify": false,
+  "source": "Decision Tree Analysis Q2",
+  "position": 73
+ },
+ {
+  "id": "dt-03",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "The final nodes in a Decision Tree are called:",
+  "options": [
+   "Branches",
+   "Roots",
+   "Leaves",
+   "Features"
+  ],
+  "answer": 2,
+  "explanation": "The final nodes, which hold the decision or prediction, are leaves.",
+  "is_code": false,
+  "verify": false,
+  "source": "Decision Tree Analysis Q3",
+  "position": 74
+ },
+ {
+  "id": "dt-04",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "Decision Trees split data based on:",
+  "options": [
+   "Decision rules",
+   "Clusters",
+   "Distances only",
+   "Random labels"
+  ],
+  "answer": 0,
+  "explanation": "Each split applies a decision rule on a feature.",
+  "is_code": false,
+  "verify": false,
+  "source": "Decision Tree Analysis Q4",
+  "position": 75
+ },
+ {
+  "id": "dt-05",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "Which metric is commonly used for classification trees?",
+  "options": [
+   "Gini Index",
+   "Variance Inflation Factor",
+   "Mean Absolute Error",
+   "Euclidean Distance"
+  ],
+  "answer": 0,
+  "explanation": "The Gini Index (or entropy) measures how pure a split is in classification trees.",
+  "is_code": false,
+  "verify": false,
+  "source": "Decision Tree Analysis Q5",
+  "position": 76
+ },
+ {
+  "id": "dt-06",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "A Decision Tree can easily handle:",
+  "options": [
+   "Numerical data only",
+   "Categorical data only",
+   "Both numerical and categorical data",
+   "Images only"
+  ],
+  "answer": 2,
+  "explanation": "Trees can split on numeric thresholds and on categories.",
+  "is_code": false,
+  "verify": false,
+  "source": "Decision Tree Analysis Q6",
+  "position": 77
+ },
+ {
+  "id": "dt-07",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "Pruning is used to:",
+  "options": [
+   "Add branches",
+   "Prevent overfitting",
+   "Increase tree depth",
+   "Remove records"
+  ],
+  "answer": 1,
+  "explanation": "Pruning removes branches that fit noise, so the tree generalizes better.",
+  "is_code": false,
+  "verify": false,
+  "source": "Decision Tree Analysis Q7",
+  "position": 78
+ },
+ {
+  "id": "dt-08",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "Which is an advantage of Decision Trees?",
+  "options": [
+   "Easy interpretation",
+   "Requires large computing power",
+   "Difficult visualization",
+   "Cannot classify data"
+  ],
+  "answer": 0,
+  "explanation": "Trees are easy to read and explain because they follow simple rules.",
+  "is_code": false,
+  "verify": false,
+  "source": "Decision Tree Analysis Q8",
+  "position": 79
+ },
+ {
+  "id": "dt-09",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "Decision Trees are most commonly associated with:",
+  "options": [
+   "Rule-based learning",
+   "Clustering",
+   "Neural computation",
+   "Bayesian estimation"
+  ],
+  "answer": 0,
+  "explanation": "A tree is a set of if-then rules, so it is rule-based learning.",
+  "is_code": false,
+  "verify": false,
+  "source": "Decision Tree Analysis Q9",
+  "position": 80
+ },
+ {
+  "id": "dt-10",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "Besides the Gini Index, which measure can be used to choose splits in a decision tree?",
+  "options": [
+   "Entropy (information gain)",
+   "Euclidean distance",
+   "Silhouette score",
+   "WCSS"
+  ],
+  "answer": 0,
+  "explanation": "Entropy and information gain are the other common split criteria.",
+  "is_code": false,
+  "verify": true,
+  "source": "Similar to Decision Tree Analysis Q10 (not visible in the PDF)",
+  "position": 81
+ },
+ {
+  "id": "dt-11",
+  "topic": "co3-tree",
+  "kind": "mc",
+  "prompt": "A tree that fits the training data too closely and performs poorly on new data is:",
+  "options": [
+   "Overfitted",
+   "Pruned",
+   "Underfitted",
+   "Normalized"
+  ],
+  "answer": 0,
+  "explanation": "That is overfitting. Pruning is one way to reduce it.",
+  "is_code": false,
+  "verify": true,
+  "source": "Similar to Decision Tree Analysis Q11 (not visible in the PDF)",
+  "position": 82
+ },
+ {
+  "id": "km-01",
+  "topic": "co3-kmeans",
+  "kind": "mc",
+  "prompt": "K-Means is primarily used for:",
+  "options": [
+   "Classification",
+   "Regression",
+   "Clustering",
+   "Forecasting"
+  ],
+  "answer": 2,
+  "explanation": "K-Means is an unsupervised clustering algorithm.",
+  "is_code": false,
+  "verify": false,
+  "source": "K-Means Q1",
+  "position": 83
+ },
+ {
+  "id": "km-02",
+  "topic": "co3-kmeans",
+  "kind": "mc",
+  "prompt": "K in K-Means represents:",
+  "options": [
+   "Number of features",
+   "Number of records",
+   "Number of clusters",
+   "Number of labels"
+  ],
+  "answer": 2,
+  "explanation": "K is the number of clusters you ask the algorithm to find.",
+  "is_code": false,
+  "verify": false,
+  "source": "K-Means Q2",
+  "position": 84
+ },
+ {
+  "id": "km-03",
+  "topic": "co3-kmeans",
+  "kind": "mc",
+  "prompt": "What is the center of a cluster called?",
+  "options": [
+   "Mean Point",
+   "Node",
+   "Centroid",
+   "Branch"
+  ],
+  "answer": 2,
+  "explanation": "The center of a cluster is its centroid.",
+  "is_code": false,
+  "verify": false,
+  "source": "K-Means Q3",
+  "position": 85
+ },
+ {
+  "id": "km-04",
+  "topic": "co3-kmeans",
+  "kind": "mc",
+  "prompt": "The objective of K-Means is to:",
+  "options": [
+   "Maximize cluster distance within clusters",
+   "Minimize distance within clusters",
+   "Increase classification accuracy",
+   "Reduce labels"
+  ],
+  "answer": 1,
+  "explanation": "K-Means makes points close to their own centroid, which minimizes the distance within clusters.",
+  "is_code": false,
+  "verify": false,
+  "source": "K-Means Q4",
+  "position": 86
+ },
+ {
+  "id": "km-05",
+  "topic": "co3-kmeans",
+  "kind": "mc",
+  "prompt": "Which measure is commonly used to assign data points to clusters?",
+  "options": [
+   "Manhattan Distance only",
+   "Euclidean Distance",
+   "Correlation",
+   "Entropy"
+  ],
+  "answer": 1,
+  "explanation": "Each point goes to the nearest centroid, measured by Euclidean distance. Entropy belongs to decision trees.",
+  "is_code": false,
+  "verify": false,
+  "source": "K-Means Q5",
+  "position": 87
+ },
+ {
+  "id": "km-06",
+  "topic": "co3-kmeans",
+  "kind": "mc",
+  "prompt": "Which method helps determine the optimal number of clusters?",
+  "options": [
+   "Train-Test Split",
+   "Cross Validation",
+   "Elbow Method",
+   "Bootstrap"
+  ],
+  "answer": 2,
+  "explanation": "The Elbow Method plots WCSS against K and picks the K where the drop levels off.",
+  "is_code": false,
+  "verify": false,
+  "source": "K-Means Q6",
+  "position": 88
+ },
+ {
+  "id": "km-07",
+  "topic": "co3-kmeans",
+  "kind": "mc",
+  "prompt": "K-Means works best when clusters are:",
+  "options": [
+   "Arbitrary shaped",
+   "Spherical and well separated",
+   "Overlapping completely",
+   "Unknown"
+  ],
+  "answer": 1,
+  "explanation": "K-Means assumes roughly round clusters with clear gaps between them.",
+  "is_code": false,
+  "verify": false,
+  "source": "K-Means Q7",
+  "position": 89
+ },
+ {
+  "id": "km-08",
+  "topic": "co3-kmeans",
+  "kind": "mc",
+  "prompt": "K-Means is a(n) ____ learning algorithm.",
+  "options": [
+   "unsupervised",
+   "supervised",
+   "rule-based",
+   "regression"
+  ],
+  "answer": 0,
+  "explanation": "It works on unlabeled data, so it is unsupervised.",
+  "is_code": false,
+  "verify": true,
+  "source": "Similar to K-Means Q8 (not visible in the PDF)",
+  "position": 90
+ },
+ {
+  "id": "km-09",
+  "topic": "co3-kmeans",
+  "kind": "mc",
+  "prompt": "In the Elbow Method, what does WCSS stand for?",
+  "options": [
+   "Within-Cluster Sum of Squares",
+   "Weighted Class Sum of Scores",
+   "Within-Class Standard Score",
+   "Whole-Cluster Sample Size"
+  ],
+  "answer": 0,
+  "explanation": "WCSS = within-cluster sum of squares: the total squared distance from points to their centroid.",
+  "is_code": false,
+  "verify": true,
+  "source": "Similar to K-Means Q9 (not visible in the PDF)",
+  "position": 91
+ },
+ {
+  "id": "cs-c01",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Which article is the case study based on?",
+  "options": [],
+  "answer": null,
+  "explanation": "Ayari, Guetari & Kraïem (2026), 'Machine learning powered financial credit scoring: a systematic literature review', Artificial Intelligence Review, 59(13).",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 1",
+  "position": 92
+ },
+ {
+  "id": "cs-c02",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "The article at a glance: how many studies, records, libraries and research questions? What years were covered?",
+  "options": [],
+  "answer": null,
+  "explanation": "63 studies in the final synthesis, 345 records first identified, 4 digital libraries searched, 5 research questions. Studies published 2018-2024. As a review, it built no model of its own, so the lifecycle applies to the review process and to the models it analyzes.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 2",
+  "position": 93
+ },
+ {
+  "id": "cs-c03",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Name the seven phases of the data science lifecycle used in the deck.",
+  "options": [],
+  "answer": null,
+  "explanation": "01 Discovery, 02 Data Preparation, 03 Model Planning, 04 Model Building, 05 Model Evaluation, 06 Communicate Results, 07 Operationalize.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 3",
+  "position": 94
+ },
+ {
+  "id": "cs-c04",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Phase 01 Discovery: what is the gap, the problem, and the context?",
+  "options": [],
+  "answer": null,
+  "explanation": "Gap: traditional scorecards are interpretable but rely on narrow features and linear assumptions. Problem: ML handles non-linear, high-dimensional and alternative data, yet studies use different datasets, preprocessing and metrics, so results are hard to compare. Context: lenders must decide fast and meet IFRS 9 (PD, EAD, LGD).",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 4",
+  "position": 95
+ },
+ {
+  "id": "cs-c05",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "What are the five research questions (RQ1 to RQ5)?",
+  "options": [],
+  "answer": null,
+  "explanation": "RQ1 Most widely used ML models. RQ2 Their strengths and limitations. RQ3 Metrics used to evaluate them. RQ4 Emerging trends and advances. RQ5 Challenges to adoption.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 4",
+  "position": 96
+ },
+ {
+  "id": "cs-c06",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Phase 02 Data Preparation: describe the flow from 345 records to 63 studies.",
+  "options": [],
+  "answer": null,
+  "explanation": "Identified 345 (330 from databases + 15 other sources) → screened 283 after duplicates were removed → full-text assessed 113 for eligibility → included 63 in the final synthesis.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 5",
+  "position": 97
+ },
+ {
+  "id": "cs-c07",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Which libraries were searched, and for what period?",
+  "options": [],
+  "answer": null,
+  "explanation": "Boolean search of SpringerLink, ACM DL, IEEE Xplore and Google Scholar, January 2018 to December 2024.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 5",
+  "position": 98
+ },
+ {
+  "id": "cs-c08",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "What were the inclusion rules and what was excluded?",
+  "options": [],
+  "answer": null,
+  "explanation": "Included: English, peer-reviewed, empirical, 2018-2024. Excluded: duplicates, papers under 4 pages, and studies without clear metrics.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 6",
+  "position": 99
+ },
+ {
+  "id": "cs-c09",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "How was study quality checked, and how was evidence organized?",
+  "options": [],
+  "answer": null,
+  "explanation": "Quality score: five yes / partly / no questions per study; every included study scored at least 77%. An Excel extraction form logged each study's technique, dataset and metrics, then grouped the studies into ML, DL and EL.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 6",
+  "position": 100
+ },
+ {
+  "id": "cs-c10",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Which datasets were most used in the reviewed studies?",
+  "options": [],
+  "answer": null,
+  "explanation": "The public German, Australian and Japanese credit datasets. About one-third of studies used proprietary bank data.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 6",
+  "position": 101
+ },
+ {
+  "id": "cs-c11",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Phase 03 Model Planning: what four model families were identified, with examples?",
+  "options": [],
+  "answer": null,
+  "explanation": "Traditional ML (Logistic Regression, Decision Trees, Random Forest, SVM, KNN). Deep Learning (ANN, CNN, LSTM). Ensemble Learning (GBDT, XGBoost). Hybrid Models (stacking ensembles, GA-optimized neural networks).",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 7",
+  "position": 102
+ },
+ {
+  "id": "cs-c12",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "How was the review itself planned, and which synthesis tools were used?",
+  "options": [],
+  "answer": null,
+  "explanation": "Planned in advance around PRISMA 2020 and the five RQs. Synthesis tools: comparison tables, bibliographic coupling, and keyword and citation analysis.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 7",
+  "position": 103
+ },
+ {
+  "id": "cs-c13",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Phase 04 Model Building: how were the reviewed logistic regression and XGBoost models built?",
+  "options": [],
+  "answer": null,
+  "explanation": "The review trained no model of its own; it documents how studies built theirs. Logistic regression: fitted by Newton-Raphson or gradient descent, tested with 5-fold validation (Cao et al., 2021). XGBoost: adds trees one by one, each fixing the last one's errors, tuned by Bayesian optimization (Yotsawat et al., 2021).",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 8",
+  "position": 104
+ },
+ {
+  "id": "cs-c14",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Phase 04 Model Building: how were the deep learning and stacking models built?",
+  "options": [],
+  "answer": null,
+  "explanation": "Deep learning: tabular data turned into images for a 2D CNN (Dastile & Celik, 2021); LSTM tuned by a genetic algorithm (Adisa et al., 2022). Stacking pipeline: SMOTE oversampling → RF, SVM and Extra Trees → XGBoost meta-learner (Rofik et al., 2024).",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 8",
+  "position": 105
+ },
+ {
+  "id": "cs-c15",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Phase 05 Model Evaluation: which metrics did the studies use, and how many studies used each?",
+  "options": [],
+  "answer": null,
+  "explanation": "Accuracy 49, AUC 31, F1-score 25, Recall 24, Specificity 14, KS statistic 13, Precision 13.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 9",
+  "position": 106
+ },
+ {
+  "id": "cs-c16",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Why can accuracy mislead in credit scoring?",
+  "options": [],
+  "answer": null,
+  "explanation": "Defaults are rare, so the data is imbalanced. AUC, F1, G-mean and KS give a fairer view. Combine several metrics.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 9",
+  "position": 107
+ },
+ {
+  "id": "cs-c17",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "What were the top results on the benchmark datasets?",
+  "options": [],
+  "answer": null,
+  "explanation": "Australian: 96.65% AUC, 92.36% accuracy (multi-stage ensemble, Zhang et al., 2021). Japanese: 96.95% AUC, 93.16% accuracy (multi-stage ensemble, Zhang et al., 2021). Lending Club: 93.78% AUC, 91.70% accuracy (GSCI ensemble, Chen et al., 2020). Most ML, DL and EL methods exceed 80% accuracy; hybrid and ensemble models lead.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 10",
+  "position": 108
+ },
+ {
+  "id": "cs-c18",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "How were the models validated, and was there a formal cross-study ranking?",
+  "options": [],
+  "answer": null,
+  "explanation": "k-fold, cross-validation and out-of-time tests inside the studies. There was no formal cross-study ranking.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 10",
+  "position": 109
+ },
+ {
+  "id": "cs-c19",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Give the strength and limitation of each model family: Traditional ML, Deep learning, Ensemble, Hybrid.",
+  "options": [],
+  "answer": null,
+  "explanation": "Traditional ML: small datasets, easy to interpret / needs good labeled data, LR assumes linearity. Deep learning: large, high-dimensional, non-linear data / black box, data-hungry, bias on imbalanced data. Ensemble: lower bias and variance, higher accuracy and AUC / less interpretable than single models. Hybrid: most accurate and robust, adaptable / complex to build and tune, heavy compute, overfitting risk.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 11",
+  "position": 110
+ },
+ {
+  "id": "cs-c20",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Phase 06 Communicate Results: what is the key finding?",
+  "options": [],
+  "answer": null,
+  "explanation": "Hybrid and ensemble models predict best, but cost more in interpretability and compute. Use them where accuracy matters and data is sufficient, while keeping enough transparency for regulators.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 12",
+  "position": 111
+ },
+ {
+  "id": "cs-c21",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "What emerging trends and recommendations does the deck give?",
+  "options": [],
+  "answer": null,
+  "explanation": "Alternative data (social media, mobile, psychometric) helps thin-file borrowers but needs privacy and fairness safeguards. Explainability: LIME and SHAP can bring black-box models close to scorecard-level interpretability. Practitioners: pick ensemble or hybrid models when accuracy is critical, balanced with interpretability. Researchers: standard benchmarks, privacy-safe alternative data, bias-aware models, scalable solutions.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 13",
+  "position": 112
+ },
+ {
+  "id": "cs-c22",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "Phase 07 Operationalize: what is the intended use of the review?",
+  "options": [],
+  "answer": null,
+  "explanation": "It has no deployment of its own: it is a review. It guides model selection for researchers, practitioners and institutions. Deployment-ready examples: OICSM (online updates) and SurvXGBoost (time-to-default). Tied to IFRS 9: PD, EAD, LGD.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 14",
+  "position": 113
+ },
+ {
+  "id": "cs-c23",
+  "topic": "case",
+  "kind": "card",
+  "prompt": "What are the five adoption challenges?",
+  "options": [],
+  "answer": null,
+  "explanation": "Computational cost (complex models may be prohibitive for small institutions). Interpretability (LIME and SHAP can be inconsistent and attackable). Bias and fairness (mitigate with pre-, in- and post-processing). High dimensionality (overfitting and memory cost; needs feature selection). Behavioral data (willingness to repay is hard to measure).",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 14",
+  "position": 114
+ },
+ {
+  "id": "cs-01",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "How many studies were included in the final synthesis of the review?",
+  "options": [
+   "345",
+   "283",
+   "113",
+   "63"
+  ],
+  "answer": 3,
+  "explanation": "The funnel ends at 63 studies.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 5",
+  "position": 115
+ },
+ {
+  "id": "cs-02",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "How many records remained for screening after duplicates were removed?",
+  "options": [
+   "330",
+   "283",
+   "113",
+   "63"
+  ],
+  "answer": 1,
+  "explanation": "345 identified → 283 screened after removing duplicates.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 5",
+  "position": 116
+ },
+ {
+  "id": "cs-03",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "How many full-text articles were assessed for eligibility?",
+  "options": [
+   "63",
+   "113",
+   "283",
+   "345"
+  ],
+  "answer": 1,
+  "explanation": "113 full texts were assessed; 63 were included.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 5",
+  "position": 117
+ },
+ {
+  "id": "cs-04",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "Which lifecycle phase covers search, PRISMA filtering and extraction?",
+  "options": [
+   "Discovery",
+   "Data Preparation",
+   "Model Planning",
+   "Operationalize"
+  ],
+  "answer": 1,
+  "explanation": "Phase 02, Data Preparation.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 5",
+  "position": 118
+ },
+ {
+  "id": "cs-05",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "Which four model families did the review identify?",
+  "options": [
+   "Traditional ML, Deep Learning, Ensemble Learning, Hybrid Models",
+   "Regression, Clustering, Association, Dimensionality Reduction",
+   "Supervised, Unsupervised, Semi-supervised, Reinforcement",
+   "Linear, Logistic, Tree, Neural"
+  ],
+  "answer": 0,
+  "explanation": "Traditional ML, Deep Learning, Ensemble Learning and Hybrid Models.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 7",
+  "position": 119
+ },
+ {
+  "id": "cs-06",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "Which evaluation metric was used by the most studies (49)?",
+  "options": [
+   "Accuracy",
+   "AUC",
+   "F1-score",
+   "Recall"
+  ],
+  "answer": 0,
+  "explanation": "Accuracy 49, AUC 31, F1 25, Recall 24.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 9",
+  "position": 120
+ },
+ {
+  "id": "cs-07",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "Why can accuracy mislead in credit scoring?",
+  "options": [
+   "Defaults are rare, so the data is imbalanced",
+   "Accuracy only works on regression problems",
+   "Credit data has no labels",
+   "Accuracy cannot be computed for classifiers"
+  ],
+  "answer": 0,
+  "explanation": "Because defaults are rare, a model can look accurate while missing the defaults. AUC, F1, G-mean and KS give a fairer view.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 9",
+  "position": 121
+ },
+ {
+  "id": "cs-08",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "Which models predict best, but cost more in interpretability and compute?",
+  "options": [
+   "Hybrid and ensemble models",
+   "Traditional scorecards",
+   "Logistic regression only",
+   "Single decision trees"
+  ],
+  "answer": 0,
+  "explanation": "Hybrid and ensemble models predict best but are less interpretable and heavier to run.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 12",
+  "position": 122
+ },
+ {
+  "id": "cs-09",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "Which methods can bring black-box models close to scorecard-level interpretability?",
+  "options": [
+   "LIME and SHAP",
+   "PRISMA and IFRS 9",
+   "SMOTE and XGBoost",
+   "Gini and entropy"
+  ],
+  "answer": 0,
+  "explanation": "LIME and SHAP explain black-box predictions.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 13",
+  "position": 123
+ },
+ {
+  "id": "cs-10",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "Which pipeline did Rofik et al. (2024) use in the stacking example?",
+  "options": [
+   "SMOTE oversampling → RF, SVM and Extra Trees → XGBoost meta-learner",
+   "Bayesian optimization → single decision tree → k-means",
+   "Newton-Raphson → logistic regression → 5-fold validation",
+   "Tabular data to images → 2D CNN → LSTM"
+  ],
+  "answer": 0,
+  "explanation": "SMOTE oversampling feeds RF, SVM and Extra Trees, with an XGBoost meta-learner on top.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 8",
+  "position": 124
+ },
+ {
+  "id": "cs-11",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "Which framework are PD, EAD and LGD tied to in the deck?",
+  "options": [
+   "IFRS 9",
+   "PRISMA 2020",
+   "LIME",
+   "k-fold validation"
+  ],
+  "answer": 0,
+  "explanation": "Lenders must meet IFRS 9 (probability of default, exposure at default, loss given default).",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 4",
+  "position": 125
+ },
+ {
+  "id": "cs-12",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "What was every included study required to score on the quality check?",
+  "options": [
+   "At least 50%",
+   "At least 60%",
+   "At least 77%",
+   "At least 90%"
+  ],
+  "answer": 2,
+  "explanation": "Five yes / partly / no questions per study; every included study scored at least 77%.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 6",
+  "position": 126
+ },
+ {
+  "id": "cs-13",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "Which benchmark dataset had the top AUC of 96.95%?",
+  "options": [
+   "Australian",
+   "Japanese",
+   "Lending Club",
+   "German"
+  ],
+  "answer": 1,
+  "explanation": "Japanese: 96.95% AUC, 93.16% accuracy (multi-stage ensemble, Zhang et al., 2021).",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 10",
+  "position": 127
+ },
+ {
+  "id": "cs-14",
+  "topic": "case",
+  "kind": "mc",
+  "prompt": "What is the review's relationship to model deployment?",
+  "options": [
+   "It deployed no model of its own; it guides model selection",
+   "It deployed an XGBoost model at a bank",
+   "It deployed an LSTM for online updates",
+   "It deployed OICSM and SurvXGBoost itself"
+  ],
+  "answer": 0,
+  "explanation": "It is a review: no deployment of its own. OICSM and SurvXGBoost are examples of deployment-ready models from the literature.",
+  "is_code": false,
+  "verify": false,
+  "source": "Group 9 deck, slide 14",
+  "position": 128
+ }
+]
